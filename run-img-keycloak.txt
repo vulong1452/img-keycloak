@@ -1,0 +1,1 @@
+docker run -d --name keycloak -p 8080:8080 -e KEYCLOAK_ADMIN="***" -e KEYCLOAK_ADMIN_PASSWORD="***"  -e KC_DB="mariadb" -e KC_DB_URL="jdbc:mariadb://{DB}/***" -e KC_DB_USERNAME="***" -e KC_DB_PASSWORD="***" quay.io/keycloak/keycloak:23.0.5-0 start-dev
